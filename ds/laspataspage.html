@@ -87,41 +87,51 @@
         }
 
         footer {
+            margin: 100px auto 10px auto;
             color: white;
-            font-family: 'Montserrat';
-            font-size: medium;
+            font-family: "Montserrat";
+            font-size: smaller;
+            
         }
 
-        footer > p > img {
+        footer > div {
+            /*não pensei em nada de útil pra essa div*/
+        }
+
+        footer > div > p > img {
             border-radius: 100px;
             width: 20px;
-            text-align: center;
         }
 
-        p.enddel {
-            margin-top: 50px;
+        footer > div > p.enddel {
             width: 200px;
+            background-color: #2e222f;
+            padding: 10px 0px;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
-        p.ace {
+        footer > div > p.ace {
             width: 200px;
+            background-color: #2e222f;
+            padding: 10px 0px;
+            border-radius: 20px;
+            margin-top: 10px;
         }
 
-        p.enddel:hover {
-            color: #ff0040;
+        footer > div >p.enddel:hover {
+            background-color: #c32454;
         }
 
-        p.ace:hover {
-            color: #f51e9f;
+        footer > div > p.ace:hover {
+            background-color: #cc3495;
         }
 
-        section {
-            color: white;
-        }
-
-        footer > p {
+        footer > div > p {
             text-align: center;
             margin: auto;
+            padding: 70px 0;
         }
 
         header > .version {
@@ -129,6 +139,20 @@
             font-size: 0.5em;
             font-weight: 10;
             font-family: "Montserrat";
+        }
+
+        .logofinal {
+            width: 100px;
+            margin: 20px auto auto auto;
+            display: block;
+        }
+
+        .myinsta {
+            text-decoration: none;
+        }
+
+        .myinsta:visited {
+            color: white;
         }
 
     </style>
@@ -153,12 +177,14 @@
     <section>
 
     </section>
-    <hr>
-    <footer>
-        <p class="enddel">Feito por Enddel<img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/myself.jpg" alt="enddelphoto" srcset=""></p>
-        <p class="ace"><img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/acephoto.png" alt="acephoto" srcset="">Pensado por Ace</p>
-    </footer>
-
     <a href="https://enddel.github.io/Duckpedia_enddel/ds/index.html">Voltar</a>
+    <footer>
+        <hr>
+        <img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/favcon2.png" alt="" srcset="" class="logofinal">
+        <div>
+        <p class="enddel"><a href="https://www.instagram.com/prxzxn/" class="myinsta" target="_blank">Feito por Enddel</a><img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/myself.jpg" alt="" srcset=""></p>
+        <p class="ace"><img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/acephoto.png" alt="" srcset="">Pensado por Ace</p>
+        </div>
+    </footer>
 </body>
 </html>
