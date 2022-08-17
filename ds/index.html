@@ -131,30 +131,44 @@
             
         }
 
-        footer > p > img {
+        footer > div {
+            /*não pensei em nada de útil pra essa div*/
+        }
+
+        footer > div > p > img {
             border-radius: 100px;
             width: 20px;
         }
 
-        p.enddel {
+        footer > div > p.enddel {
             width: 200px;
+            background-color: #2e222f;
+            padding: 10px 0px;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
-        p.ace {
+        footer > div > p.ace {
             width: 200px;
+            background-color: #2e222f;
+            padding: 10px 0px;
+            border-radius: 20px;
+            margin-top: 10px;
         }
 
-        p.enddel:hover {
-            color: #ff0040;
+        footer > div >p.enddel:hover {
+            background-color: #c32454;
         }
 
-        p.ace:hover {
-            color: #f51e9f;
+        footer > div > p.ace:hover {
+            background-color: #cc3495;
         }
 
-        footer > p {
+        footer > div > p {
             text-align: center;
             margin: auto;
+            padding: 70px 0;
         }
 
         section {
@@ -169,6 +183,15 @@
 
         section > p {
             font-size: 0.8em;
+        }
+
+        .logofinal {
+            width: 100px;
+            margin-top: 20px;
+        }
+
+        .myinsta {
+            text-decoration: none;
         }
 
     </style>
@@ -197,10 +220,13 @@
         <p>Enciclopédia sobre patos criada em 16/08/2022 por PruzinRG em colaboração indireta de criatividade com Ace.</p>
         <p>Página com zero intuito monetário, apenas humor.</p>
     </section>
-    <hr>
     <footer>
-        <p class="enddel">Feito por Enddel<img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/myself.jpg" alt="" srcset=""></p>
+        <hr>
+        <img src="/dsmedia/favcon2.png" alt="" srcset="" class="logofinal">
+        <div>
+        <p class="enddel"><a href="https://www.instagram.com/prxzxn/" class="myinsta" target="_blank">Feito por Enddel</a><img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/myself.jpg" alt="" srcset=""></p>
         <p class="ace"><img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/acephoto.png" alt="" srcset="">Pensado por Ace</p>
+        </div>
     </footer>
 </body>
 </html>
