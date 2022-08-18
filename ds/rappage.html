@@ -26,14 +26,14 @@
             color: orange;
         }
 
-        p.subtitle {
+        header > p.subtitle {
             font-family: "Montserrat";
             color: orange;
             margin-top: 0px;
             margin-bottom: 20px;
         }
 
-        p.subtitle:hover {
+        header > p.subtitle:hover {
             color: white;
         }
 
@@ -49,11 +49,38 @@
             color: orange;
         }
 
+        div.partetitle {
+            background-color: orange;
+            height: 70px;
+            text-align: center;
+            margin-top: -32px;
+            margin-right: -32.5px;
+            margin-bottom: 20px;
+            margin-left: -32.5px;
+            border-radius: 50px 50px 0px 0px;
+            padding-top: 30px;
+        }
+
+        main > div > h1.titlepato {
+            margin: auto;
+            top: 50%;
+        }
+
         main {
             background-color: #2e222f;
             padding: 10px 30px 20px 30px;
             border-radius: 50px;
             margin: 30px;
+            border: 3px solid orange;
+        }
+
+        hr {
+            color: orange;
+        }
+
+        main > h2 {
+            font-family: "DynaPuff";
+            font-weight: 400;
         }
 
         main > img.patoimg {
@@ -64,7 +91,7 @@
             margin-left: auto;
         }
 
-        main > .titlepato {
+        main > div > .titlepato {
             font-family: "DynaPuff";
             font-weight: 400;
         }
@@ -100,6 +127,7 @@
             border-radius: 20px;
             margin-top: 10px;
             margin-bottom: 10px;
+            border: 1px solid orange;
         }
 
         footer > div > p.ace {
@@ -108,14 +136,17 @@
             padding: 10px 0px;
             border-radius: 20px;
             margin-top: 10px;
+            border: 1px solid orange;
         }
 
         footer > div >p.enddel:hover {
             background-color: #c32454;
+            border: 1px solid #c32454;
         }
 
         footer > div > p.ace:hover {
             background-color: #cc3495;
+            border: 1px solid #cc3495;
         }
 
         footer > div > p {
@@ -149,13 +180,15 @@
 </head>
 <body>
     <header>
-        <p class="version">version 0.0.2</p>
+        <p class="version">version 0.0.3</p>
         <h1 class="title">Patopedia</h1>
         <p class="subtitle">Enciclopédia de patos</p>
     </header>
     <a href="https://enddel.github.io/Duckpedia_enddel/ds/index.html" class="back">Voltar</a>
     <main>
+        <div class="partetitle">
         <h1 class="titlepato">Grupo Emiciduck</h1>
+        </div>
         <img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/rapdepato.png" alt="" srcset="" class="patoimg"><abbr title="Emiciduck"></abbr></img>
 
         <h2 class="titlepato">Resumo</h2>
