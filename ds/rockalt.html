@@ -173,8 +173,10 @@
             margin-top: 50px;
         }
 
-        .oipato {
+        #oipato {
+            display: block;
             font-size: smaller;
+            width: 300px;
         }
 
         .dalletrio {
@@ -214,7 +216,6 @@
             font-weight: 100;
             font-size: 0.6em;
             margin: 100px auto 10px auto;
-            
         }
 
     </style>
@@ -257,7 +258,8 @@
         </p>
 
         <img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/patoemo.png" alt="" srcset="" class="patoemo">
-        <p class="oipato">*o pato emo baixista te dá oi*</p>
+        <p id="oipato">*o pato emo baixista te dá oi*</p>
+        <button onclick="darOi()" id="botaooi">Dar oi</button>
     </main>
     <a href="https://enddel.github.io/Duckpedia_enddel/ds/index.html" class="back">Voltar</a>
     <p class="reffinal">*Nenhuma bicicleta foi hackeada durante a escrita e publicação desta página.</p>
@@ -269,5 +271,10 @@
         <p class="ace"><img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/acephoto.png" alt="" srcset="">Pensado por Ace</p>
         </div>
     </footer>
+    <script>
+        function darOi() {
+            document.getElementById("oipato").innerText = "*o pato emo baixista está tímido, porém ele aprecia a delicadeza de seu oi*";
+        }
+    </script>
 </body>
 </html>
