@@ -11,7 +11,7 @@
         
         body {
             margin: auto;
-            background-color: #45293f;
+            background-color: #165A4C;
             height: auto;
             min-width: 300px;
             max-width: 700px;
@@ -32,20 +32,19 @@
             text-align: center;
         }
 
-        header > .version {
+        header > div > .version {
             margin: auto;
             font-size: 0.5em;
             font-weight: 10;
             font-family: "Montserrat";
         }
 
-        header > h1:hover {
+        header > div > h1:hover {
             color: orange;
         }
 
         header > div {
             font-family: "Montserrat";
-            width: 120px;
             color: white;
             margin: auto;
             font-weight: 500;
@@ -75,12 +74,15 @@
 
         .divhover:hover {
             border: 2px solid orange;
-            padding: 5px;
+            padding: 10px;
+            border-radius: 23px;
         }
 
         .divhover {
             border: 2px solid orange;
-            padding: 5px;
+            padding: 10px;
+            border-radius: 25px;
+            width: 120px;
 
         }
 
@@ -100,21 +102,18 @@
             font-weight: 200;
             margin: auto;
             color: white;
+            width: auto;
         }
 
         main {
             color: white;
-            background-color: #2e222f;
-            padding: 5px;
-            margin-top: 30px;
-            margin-right: 20px;
-            margin-left: 20px;
-            border-radius: 50px;
-            border: 3px solid orange;
         }
 
         hr {
             color: orange;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            width: auto;
         }
 
         main > h1.maintitle {
@@ -143,7 +142,7 @@
 
         footer > div > p.enddel {
             width: 200px;
-            background-color: #2e222f;
+            background-color: #239063;
             padding: 10px 0px;
             border-radius: 20px;
             margin-top: 10px;
@@ -153,7 +152,7 @@
 
         footer > div > p.ace {
             width: 200px;
-            background-color: #2e222f;
+            background-color: #239063;
             padding: 10px 0px;
             border-radius: 20px;
             margin-top: 10px;
@@ -213,20 +212,47 @@
         }
 
         .loglink:link {
-            color: #45293f;
+            color: #165A4C;
         }
 
+        /*
+        cores
+
+        #165A4C
+        #239063
+
+        */
+
         .loglink:visited {
-            color: #2e222f;
+            color: #239063;
+        }
+
+        .logo {
+            width: 400px;
+            margin: auto;
+        }
+
+        .pqntabranco {
+            color: white;
+        }
+
+        .fundinho {
+            background-color: #239063;
+            margin: 40px;
+            border-radius: 50px;
+            padding: 10px;
+            border: 1px solid orange;
         }
 
     </style>
 </head>
 <body>
     <header>
-        <p class="version">version 0.0.3</p>
-        <h1 class="title">Patopedia</h1>
+        <div class="topdiv">
+        <p class="version">version 0.0.4</p>
+        <h1 class="title">Duckpedia</h1>
         <p class="subtitle">Enciclopédia de patos</p>
+        </div>
         <div class="divhover">Tipos de patos<ul>
             <li class="listadepatos"><a href="rappage.html">Rap</a></li>
             <li class="listadepatos"><a href="laspataspage.html">Sertanejo</a></li>
@@ -235,17 +261,20 @@
         </ul>
         </div>
     </header>
-
+    <img src="../dsmedia/DuckPediaLogo.png" alt="" srcset="" class="logo">
+<div class="fundinho">
     <main>
         <h1 class="maintitle">Todos os tipos de patos aqui</h1>
-        <p>Obrigado por confiar no nosso site para se consultar em nosso conhecimento sobre patos.</p>
     </main>
+    <p class="pqntabranco">Obrigado por confiar no nosso site para se consultar em nosso conhecimento sobre patos.</p>
 
     <section>
         <h2>Sobre a Patopedia</h2>
         <p>Enciclopédia sobre patos criada em 16/08/2022 por PruzinRG em colaboração indireta de criatividade com Ace.</p>
         <p>Página com zero intuito monetário, apenas humor.</p>
     </section>
+<hr>
+</div>
     <footer>
         <hr>
         <img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/favcon2.png" alt="" srcset="" class="logofinal">
