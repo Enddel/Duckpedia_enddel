@@ -11,11 +11,12 @@
         
         body {
             margin: auto;
-            background-color: #165A4C;
+            background-image: linear-gradient(0deg, #165A4C 10%, #239063);
             height: auto;
             min-width: 300px;
             max-width: 700px;
             text-align: center;
+            padding: 50px;
         }
 
         a {
@@ -33,7 +34,7 @@
         }
 
         header > div > .version {
-            margin: auto;
+            margin: -50px auto 0px auto;
             font-size: 0.5em;
             font-weight: 10;
             font-family: "Montserrat";
@@ -117,14 +118,14 @@
         }
 
         main > h1.maintitle {
-            font-family: "Dancing Script", Arial, Helvetica, sans-serif;
+            font-family: "DynaPuff", Arial, Helvetica, sans-serif;
             font-size: 3em;
+            font-weight: 900;
         }
 
         main > p {
             font-size: 1.4em;
             padding: 5px;
-
         }
 
         footer {
@@ -147,7 +148,6 @@
             border-radius: 20px;
             margin-top: 10px;
             margin-bottom: 10px;
-            border: 1px solid orange;
         }
 
         footer > div > p.ace {
@@ -156,17 +156,14 @@
             padding: 10px 0px;
             border-radius: 20px;
             margin-top: 10px;
-            border: 1px solid orange;
         }
 
         footer > div >p.enddel:hover {
             background-color: #c32454;
-            border: 1px solid #c32454;
         }
 
         footer > div > p.ace:hover {
             background-color: #cc3495;
-            border: 1px solid #cc3495;
         }
 
         footer > div > p {
@@ -176,13 +173,14 @@
         }
 
         section {
-            font-family: "Dancing Script";
+            font-family: "DynaPuff";
             font-size: larger;
             color: white;
         }
 
         section > h2 {
             font-size: 2em;
+            font-weight: 700;
         }
 
         section > p {
@@ -227,21 +225,38 @@
             color: #239063;
         }
 
-        .logo {
-            width: 400px;
-            margin: auto;
-        }
-
         .pqntabranco {
             color: white;
         }
 
         .fundinho {
-            background-color: #239063;
-            margin: 40px;
+            background-color: #1EBC73;
             border-radius: 50px;
-            padding: 10px;
-            border: 1px solid orange;
+            padding: 10px 20px 20px 20px;
+        }
+
+        .aviso {
+            margin: 0px auto 20px auto;
+            color: white;
+            background-color: #2E222F;
+            border-radius: 25px;
+            padding: 20px;
+            min-width: 300px;
+        }
+
+        img.logo {
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+
+        div.destaque {
+            max-width: 500px;
+            background-color: #2E222F;
+            padding: 2px 15px;
+            border-radius: 30px;
+            font-size: 1em;
+            margin: auto auto 20px auto;
         }
 
     </style>
@@ -249,7 +264,7 @@
 <body>
     <header>
         <div class="topdiv">
-        <p class="version">version 0.0.4</p>
+        <p class="version">version 0.0.5</p>
         <h1 class="title">Duckpedia</h1>
         <p class="subtitle">Enciclopédia de patos</p>
         </div>
@@ -261,8 +276,9 @@
         </ul>
         </div>
     </header>
-    <img src="../dsmedia/DuckPediaLogo.png" alt="" srcset="" class="logo">
-<div class="fundinho">
+    <img src="../dsmedia/DuckPediaLogo.png" alt="" srcset="" class="logo" width="600" height="240">
+<p class="aviso">O site possui alguns problemas com o Chrome e resoluções pequenas, tente recarregar para garantir que é a versão atualizada, estou fazendo pelo Firefox e sou extremamente iniciante nisso, o site é um passatempo.</p>
+    <div class="fundinho">
     <main>
         <h1 class="maintitle">Todos os tipos de patos aqui</h1>
     </main>
@@ -272,16 +288,18 @@
         <h2>Sobre a Patopedia</h2>
         <p>Enciclopédia sobre patos criada em 16/08/2022 por PruzinRG em colaboração indireta de criatividade com Ace.</p>
         <p>Página com zero intuito monetário, apenas humor.</p>
+        <div class="destaque">
+        <p class="pqntabranco">Tudo está sendo escrito apenas por uma pessoa que não tem conhecimento avançado de programação/webdesign</p>
+        </div>
     </section>
-<hr>
 </div>
     <footer>
-        <hr>
         <img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/favcon2.png" alt="" srcset="" class="logofinal">
         <div>
         <p class="enddel"><a href="https://www.instagram.com/prxzxn/" class="myinsta" target="_blank">Feito por Enddel</a><img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/myself.jpg" alt="" srcset=""></p>
         <p class="ace"><img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/acephoto.png" alt="" srcset=""><a href="https://www.instagram.com/acekkjkk/" class="myinsta" target="_blank">Pensado por Ace</a></p>
         </div>
+        <a href="sobreenddel.html" class="sobre">Sobre Enddel</a>
     </footer>
     <a href="https://enddel.github.io/Duckpedia_enddel/ds/log.html" class="loglink">log</a>
 </body>

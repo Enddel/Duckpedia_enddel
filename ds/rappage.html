@@ -44,23 +44,19 @@
             min-width: 400px;
             max-width: 700px;
             color: white;
-            background-color: #165A4C;
+            background-image: linear-gradient(180deg, #239063, #165A4C);
         }
 
-        .back:visited {
+        .back:visited ,.back:link {
             color: orange;
         }
 
         div.partetitle {
-            background-color: orange;
-            height: 70px;
-            text-align: center;
-            margin-top: -32px;
-            margin-right: -32.5px;
-            margin-bottom: 20px;
-            margin-left: -32.5px;
-            border-radius: 50px 50px 0px 0px;
-            padding-top: 30px;
+            background-color: #239063;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 20px;
         }
 
         main > div > h1.titlepato {
@@ -68,12 +64,18 @@
             top: 50%;
         }
 
-        main {
+        .subtitlemain {
             background-color: #239063;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        main {
+            background-color: #1EBC73;
             padding: 10px 30px 20px 30px;
             border-radius: 50px;
             margin: 30px;
-            border: 3px solid orange;
         }
 
         main > h2 {
@@ -125,7 +127,6 @@
             border-radius: 20px;
             margin-top: 10px;
             margin-bottom: 10px;
-            border: 1px solid orange;
         }
 
         footer > div > p.ace {
@@ -134,17 +135,14 @@
             padding: 10px 0px;
             border-radius: 20px;
             margin-top: 10px;
-            border: 1px solid orange;
         }
 
         footer > div >p.enddel:hover {
             background-color: #c32454;
-            border: 1px solid #c32454;
         }
 
         footer > div > p.ace:hover {
             background-color: #cc3495;
-            border: 1px solid #cc3495;
         }
 
         footer > div > p {
@@ -183,7 +181,7 @@
             height: 200px;
             margin: auto;
             display: block;
-            background-color: #1EBC73;
+            background-color: #239063;
             border-radius: 50px;
             padding-top: 0px;
             padding-right: 20px;
@@ -197,6 +195,18 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 0.6em;
             text-align: center;
+            padding: 0px;
+        }
+
+        .finalmais {
+            font-family: "Montserrat";
+            font-size: 0.7em;
+            margin: 20px;
+        }
+
+        section > ul > li {
+            font-family: "Montserrat";
+            font-size: 0.9em;
         }
 
         /*
@@ -204,6 +214,7 @@
 
         #165A4C
         #239063
+        #1EBC73
         
         */
 
@@ -211,7 +222,7 @@
 </head>
 <body>
     <header>
-        <p class="version">version 0.0.4</p>
+        <p class="version">version 0.0.5</p>
         <h1 class="title">Duckpedia</h1>
         <p class="subtitle">Enciclopédia de patos</p>
     </header>
@@ -222,7 +233,7 @@
         </div>
         <img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/rapdepato.png" alt="" srcset="" class="patoimg"><abbr title="Emiciduck"></abbr></img>
 
-        <h2 class="titlepato">Resumo</h2>
+        <h2 class="subtitlemain">Resumo</h2>
         <p>Fernando Pato da Silveira, conhecido pelo grupo música Emiciduck, é um rapper, cantor, letrista, compositor e pato brasileiro.</p>
 
         <p>O nome "Emiciduck" é uma fusão das palavras "MC", "homicida" e pato. Devia as suas constantes vitórias nas batalhas de improvisação, seus amigos começaram a falar que Fernando era um "patassino", e que "matava" seus adversários, a gangue "Dogz", através de suas rimas.</p>
@@ -231,7 +242,7 @@
         <p class="underimg">Membro da Dogz posando com duas vítimas em mãos.</p>
         <p>Mais tarde, o <i>rapper</i> criou também um acrônimo para o nome: E.M.I.C.I.D.U.C.K. (Enquanto Minha Imaginação Compuser Insanidades Domino Unanimemente* Cuarquer Koisa**)</p>
         <section>
-            <h2>Discografia</h2>
+            <h2 class="subtitlemain">Discografia</h2>
             <ul>
                 <li><abbr title="link perdido"> Pra quem já mordeu um ganso por comida, até que eu cheguei longe...</abbr></li>
                 <li><abbr title="link perdido">Sua pata ouve meu rep tamém</abbr></li>
@@ -240,13 +251,13 @@
 
             </ul>
         </section>
-    </main>
-    <a href="https://enddel.github.io/Duckpedia_enddel/ds/index.html" class="back">Voltar</a>
-
+    </main> 
+<div class="finalmais">
     <p>*De modo unânime; por unanimidade; de comum acordo; por um sentimento ou parecer geral comum: Votaram unanimemente a abolição da pena de morte: Foi eleito unanimemente o melhor ator. (É uma palavra estranha, deixei aqui de curiosidade)</p>
     <p>**Não questione, aceite os patos</p>
+</div>
+<a href="https://enddel.github.io/Duckpedia_enddel/ds/index.html" class="back">Voltar</a>
     <footer>
-        <hr>
         <img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/favcon2.png" alt="" srcset="" class="logofinal">
         <div>
         <p class="enddel"><a href="https://www.instagram.com/prxzxn/" class="myinsta" target="_blank">Feito por Enddel</a><img src="https://enddel.github.io/Duckpedia_enddel/dsmedia/myself.jpg" alt="" srcset=""></p>
